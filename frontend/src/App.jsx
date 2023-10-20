@@ -3,8 +3,8 @@ import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
 import ProfilePage from "./pages/ProfilePage";
 import SignInPage from "./pages/SignInPage";
-import SignOutPage from "./pages/SignOutPage";
 import Header from "./components/Header";
+import SignUpPage from "./pages/SignUpPage";
 
 const App = () => {
   return (
@@ -14,8 +14,8 @@ const App = () => {
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/about" element={<AboutPage />}></Route>
         <Route path="/profile" element={<ProfilePage />}></Route>
-        <Route path="/sign-in" element={<SignInPage />}></Route>
-        <Route path="/sign-out" element={<SignOutPage />}></Route>
+        <Route path="/signin" element={<SignInPage />}></Route>
+        <Route path="/signup" element={<SignUpPage />}></Route>
       </Routes>
     </BrowserRouter>
   );
