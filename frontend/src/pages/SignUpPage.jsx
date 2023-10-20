@@ -38,7 +38,7 @@ const SignUpPage = () => {
         return;
       }
 
-      navigate("/signin");
+      navigate("/sign-in");
     } catch (err) {
       setLoading(false);
       setError(err.message);
@@ -54,6 +54,7 @@ const SignUpPage = () => {
       >
         <div className="flex flex-col gap-4 bg-slate-50 p-4 rounded-xl">
           <input
+            required
             type="text"
             placeholder="Username"
             className="border p-3 rounded-lg"
@@ -61,6 +62,7 @@ const SignUpPage = () => {
             onChange={handleChange}
           />
           <input
+            required
             type="text"
             placeholder="Email"
             className="border p-3 rounded-lg"
@@ -68,6 +70,7 @@ const SignUpPage = () => {
             onChange={handleChange}
           />
           <input
+            required
             type="password"
             placeholder="Password"
             className="border p-3 rounded-lg"
@@ -87,7 +90,7 @@ const SignUpPage = () => {
 
         <div className="flex justify-between">
           <p className="text-slate-700">Already have an account?</p>
-          <Link to="/" className="underline text-blue-950">
+          <Link to="/sign-in" className="underline text-blue-950">
             Sign In
           </Link>
         </div>
