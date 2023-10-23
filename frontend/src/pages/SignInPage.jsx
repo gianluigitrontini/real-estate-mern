@@ -6,6 +6,7 @@ import {
   signInSuccess,
   signInFailure,
 } from "../redux/user/userSlice";
+import OAuth from "../components/OAuth";
 
 const SignInPage = () => {
   const dispatch = useDispatch();
@@ -83,6 +84,8 @@ const SignInPage = () => {
           >
             {loading ? "Loading..." : "Sign In"}
           </button>
+
+          <OAuth />
 
           {error && <p className="text-red-400">ERROR: {error}</p>}
         </div>
